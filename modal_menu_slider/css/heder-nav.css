@@ -1,0 +1,146 @@
+@import url(./root.css);
+
+body {
+    transition: transform 0.3s ease;
+    }
+    
+    body.show-nav {
+    /* Width of nav */
+    transform: translateX(200px);
+    }
+    
+    nav {
+    background-color: var(--primary-color); 
+    border-radius: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    font-family: var(--montserrat);
+    }
+    
+    .nav-link {
+      color: var(--white-color);
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom:26px;
+    }
+    
+    li::after {
+      content: '';
+      background-color: var(--border-color) ;
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 26px;
+    }
+    
+    
+    header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-left: 1px var(--border-color) solid;
+    font-family: var(--montserrat);
+
+    position: relative;
+    }
+    
+    .toggle {
+      align-self: start;
+      margin:25px 0 0 20px;
+      padding: 8px;
+      color: var(--white-color);
+      background-color: #1E1E45;
+      border: none;
+      border-radius: 4px;
+    }
+    
+    .nav-logo {
+      border-radius: 50%;
+      display: block;
+      margin: 35px auto;
+      width: 100px;
+      height: auto;
+    }
+    
+    .logo::after {
+      content: '';
+      background-color:var(--border-color) ;
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin: 45px 0 26px 0;
+    }
+    
+    header h1 {
+      text-transform: capitalize;
+      margin-bottom: 35px;
+    }
+    
+    header p {
+      margin-bottom: 20px;
+    }
+    
+    .cta-btn {
+      margin-bottom: 50px;
+      border: none;
+      border-radius: 3px;
+      padding: 12px 34px;
+      color: var(--white-color);
+      background-color: var(--secondary-color);
+    }
+
+    .sign-up {
+        color: var(--primary-color);
+        background-color: var(--white-color);
+        border-radius: 4px;
+        position: fixed;
+        top: 15%;
+        display: none;
+    }
+
+    .sign-up h2 {
+        padding: 10px 0 10px 20px;
+        background-color: var(--secondary-color);
+    }
+
+    .register {
+        padding: 10px 20px;
+    }
+
+    .input {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px var(--border-color) solid;
+        border-radius: 3px;
+        padding: 10px 7px;
+    }
+    
+    .sign-up p {
+        margin-bottom: 3px;
+    }
+
+    .with-us {
+        margin: 30px 20px 15px 20px;
+    }
+
+    .input-submit {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--secondary-color);
+        padding: 8px 18px;
+        color: var(--white-color);
+    }
+
+   body.show-header {
+     display: block;
+   }
