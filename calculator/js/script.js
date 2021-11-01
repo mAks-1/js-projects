@@ -83,6 +83,11 @@ function divisionFunction() {
     document.getElementById("screen").textContent = ""
 }
 
+document.getElementById("reset").addEventListener("click", resetFunction);
+
+function resetFunction() {
+    document.getElementById("screen").textContent = ""
+}
 
 // document.getElementById("equals").addEventListener("click", equalsFunction)
 // function equalsFunction() {
