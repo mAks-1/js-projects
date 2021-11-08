@@ -1,82 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="./style.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-    <title>My page</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <title >My page</title>
+  </head>
+  <body>
     <nav id="menu">
-        <div class="logo">
-           <img class="nav-logo" src="https://randomuser.me/api/portraits/men/76.jpg" alt="">
-        </div>
-        <ul>
-            <li>
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#">Contacts</a>
-            </li>
-        </ul>
+      <div class="logo">
+        <img
+          class="nav-logo"
+          src="https://randomuser.me/api/portraits/men/76.jpg"
+          alt=""
+        />
+      </div>
+      <ul>
+        <li>
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="index2.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
     </nav>
 
-<header>
-<button id="toggle" class="toggle" onclick="onClickSlide()">
-    <i class="fa fa-bars fa-2x"></i>
-</button>
-<h1>My page</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!</p>
-<button class="cta-btn" id="open" onclick="onClickFix()">Sign Up</button>
+    <header>
+      <button id="toggle" class="toggle" onclick="onClickSlide()">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <h1 id="page"></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!
+      </p>
+      <button class="cta-btn" id="open" onclick="onClickFix()">Sign Up</button>
 
+      <div class="sign-up" id="info">
+        <h2>Sign Up</h2>
+        <p class="with-us">Register with us to get offers, support and more</p>
 
-<div class="sign-up" id="info">
-<h2>Sign Up</h2>
-<p class="with-us">Register with us to get offers, support and more</p>
+        <form class="register" action="#">
+          <p>Name</p>
+          <input
+            type="text"
+            name="text"
+            class="input"
+            placeholder="Enter Name"
+          />
+          <p>Email</p>
+          <input
+            type="email"
+            name="email"
+            class="input"
+            placeholder="Enter Email"
+          />
+          <p>Password</p>
+          <input
+            type="password"
+            name="password"
+            class="input"
+            placeholder="Enter Password"
+          />
+          <p>Confirm Password</p>
+          <input
+            type="password"
+            name="password"
+            class="input"
+            placeholder="Confirm Password"
+          />
+          <input type="submit" value="Submit" class="input-submit" />
+        </form>
+      </div>
+    </header>
 
-<form class="register" action="#">
-
-<p>Name</p>
-<input type="text" name="text" class="input" placeholder="Enter Name">
-<p>Email</p>
-<input type="email" name="email" class="input" placeholder="Enter Email">
-<p>Password</p>
-<input type="password" name="password" class="input" placeholder="Enter Password">
-<p>Confirm Password</p>
-<input type="password" name="password" class="input" placeholder="Confirm Password">
-<input type="submit" value="Submit" class="input-submit">
-</form>
-
-</div>
-
-</header>
-
-<section class="page-about">
-<h1>What is this landing page about?</h1>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestias autem iusto placeat perspiciatis?
-Consectetur nisi aperiam nam earum dolores eveniet adipisci animi sit! Eligendi repellat odit nihil minus
-et.
-</p>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestias autem iusto placeat perspiciatis?
-Consectetur nisi aperiam nam earum dolores eveniet adipisci animi sit! Eligendi repellat odit nihil minus
-et.
-</p>
-<h2>Tell me more</h2>
-</section>
-
-
-<script src="js/myScript.js"></script>
-</body>
+    <section class="page-about">
+      <h1>What is this landing page about?</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        molestias autem iusto placeat perspiciatis? Consectetur nisi aperiam nam
+        earum dolores eveniet adipisci animi sit! Eligendi repellat odit nihil
+        minus et.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        molestias autem iusto placeat perspiciatis? Consectetur nisi aperiam nam
+        earum dolores eveniet adipisci animi sit! Eligendi repellat odit nihil
+        minus et.
+      </p>
+      <h2>Tell me more</h2>
+    </section>
+    <script src="js/myScript.js"></script>
+  </body>
 </html>

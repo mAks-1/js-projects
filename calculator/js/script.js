@@ -1,7 +1,13 @@
 // document.getElementById("text").textContent = "bye"
 
-let firstValue, operate;
+let firstValue, operate, fractions;
 let qwe = [1,2,3,4]
+
+
+document.getElementById("zero").addEventListener("click", zeroFunction);
+function zeroFunction() {
+    document.getElementById("screen").textContent += "0"
+}
 
 document.getElementById("one").addEventListener("click", oneFunction);
 function oneFunction() {
@@ -89,14 +95,23 @@ function resetFunction() {
     document.getElementById("screen").textContent = ""
 }
 
-// document.getElementById("equals").addEventListener("click", equalsFunction)
-// function equalsFunction() {
-//     if(operate == 1) {
-//     document.getElementById("screen").textContent = parseInt(firstValue) + parseInt(document.getElementById("screen").textContent)
-//     } else {
-//         document.getElementById("screen").textContent = parseInt(firstValue) - parseInt(document.getElementById("screen").textContent)
-//     }
-// }
+
+
+
+document.getElementById("remove").addEventListener("remove", removeFunction);
+
+function removeFunction() {
+
+  let str = document.getElementById("screen").textContent;
+  document.getElementById("screen").textContent = str.substring(0, str.length - 1);
+}
+
+
+// let stringLength = document.getElementById("screen").textContent.length; //for removing last element
+// document.getElementById("screen").textContent.charAt(stringLength - 1);
+
+
+
 
 
 document.getElementById("equals").addEventListener("click", equalsFunction)
