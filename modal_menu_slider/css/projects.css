@@ -1,0 +1,32 @@
+#body1 {
+    padding: 15px 30px;
+}
+
+.toMain {
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.info  {
+    /* background-color: white; */
+    text-align: center;
+    cursor: pointer;
+    width: 15%;
+    padding: 15px 35px;
+    border: 1px pink solid;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.info:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(255, 245, 255);
+}

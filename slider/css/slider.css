@@ -1,0 +1,49 @@
+.slider {
+  width: 45%;
+  margin: 5% auto;
+  max-height: 400px;
+}
+
+img {
+  max-width: 100%;
+  border: 4px aqua solid;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sliderImg {
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* #right-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  } */
+
+#right-button,
+#left-button {
+  cursor: pointer;
+  border: 2px aqua solid;
+  border-radius: 9px;
+  background-color: white;
+  padding: 12px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#right-button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #ffe8e8;
+}
+#left-button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #ffe8e8;
+}

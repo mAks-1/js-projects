@@ -1,0 +1,37 @@
+.slider {
+  width: 45%;
+  margin: 5% auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #right-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+
+#right-button,
+#left-button {
+  cursor: pointer;
+  border: 1px pink solid;
+  border-radius: 9px;
+  background-color: white;
+  padding: 12px 40px;
+}
+
+#right-button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #ffe8e8;
+}
+#left-button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #ffe8e8;
+}
