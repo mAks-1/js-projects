@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Save Cookie</button>
+    <button id="button1">Show Cookie</button>
+    <input id="input" type="text">
+    <script>
+      document.getElementById("button").addEventListener("click", cookieSave);
+      document.getElementById("button1").addEventListener("click", cookieShow);
+
+
+
+      function cookieSave() {
+          let inputValue = document.getElementById("input").value;
+        document.cookie = "username=" + inputValue;
+      }
+
+      function cookieShow() {
+       let cookieSave= document.cookie;
+       alert(cookieSave)
+      }
+    </script>
+  </body>
+</html>

@@ -123,14 +123,16 @@ function equalsFunction() {
 
 // document.getElementById("style").addEventListener("style", styleFunction);
 
-function styleFunction() {
-  for (let q = 0; q < 20; q++) {
-    document.getElementById("body").style.background = "#262424";
-    document.getElementById("toMain").style.color = "white";
-    document.getElementById("back").style.color = "white";
-    document.getElementsByClassName("btn")[q].style.backgroundColor = "#262424";
-    document.getElementsByClassName("btn")[q].style.color = "white";
-    document.getElementById("calculator").style.backgroundColor = "#F7C2C2";
-    document.getElementsByClassName("back")[1].style.color = "white";
-  }
-}
+
+
+//   function styleFunction() {
+//   for (let q = 0; q < 20; q++) {
+//     document.getElementById("body").style.background = "#262424";
+//     document.getElementById("toMain").style.color = "white";
+//     document.getElementById("back").style.color = "white";
+//     document.getElementsByClassName("btn")[q].style.backgroundColor = "#262424";
+//     document.getElementsByClassName("btn")[q].style.color = "white";
+//     document.getElementById("calculator").style.backgroundColor = "#F7C2C2";
+//     document.getElementsByClassName("back")[1].style.color = "white";
+//   }
+// };

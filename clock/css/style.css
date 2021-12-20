@@ -1,0 +1,12 @@
+.wrapper {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+}
+
+button {
+    font-size: 20px;
+    width: 140px;
+    height: 60px;
+}
